@@ -1,0 +1,12 @@
+#include<bits/stdc++.h>
+using namespace std;
+float sumofAp(float a,float d,int n){
+    float sum=(n/2)*((2*a)+(n-1)*d);
+    return sum;
+}
+int main(){
+    float a=3,d=2;
+    int n=6;
+    cout<<"sum of Arithmetic progression"<<sumofAp(a,d,n);
+    return 0;
+}
