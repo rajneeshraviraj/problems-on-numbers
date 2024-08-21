@@ -1,0 +1,16 @@
+#include<bits/stdc++.h>
+using namespace std;
+
+void lyear(int year) { 
+   if((year % 400 == 0) || ((year % 100 != 0) && (year % 4 == 0))) {
+        cout << "leap year" << endl;
+   } else {
+        cout << "ordinary year" << endl;
+   }
+} 
+
+int main() {
+    int year = 1996;
+    lyear(year);
+    return 0;
+}
