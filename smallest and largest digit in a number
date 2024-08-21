@@ -1,0 +1,18 @@
+#include<bits/stdc++.h>
+using namespace std;
+void maxmin(int n){
+    int ld,mini=INT_MAX,maxi=INT_MIN;
+    while(n!=0){
+    ld=n%10;
+    mini=min(mini,ld);
+    maxi=max(maxi,ld);
+    n=n/10;
+    }
+    cout<<"mini"<<mini<<endl;
+    cout<<"maxi"<<maxi<<endl;
+}
+int main(){
+    int n=123;
+    maxmin(n);
+    return 0;
+}
