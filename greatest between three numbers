@@ -1,0 +1,31 @@
+#include<bits/stdc++.h>
+using namespace std;
+void Greatbwthree(int a,int b,int c){
+    if(a>b && a>c){
+        cout<< "greatest"<<a;
+    }
+    if(b>c && b>a){
+        cout<<"greatest:"<<b;
+    }
+    if(c>a && c>b){
+        cout<<"greatest"<<c;
+    }
+}
+int main(){
+    int a=10,b=23,c=21;
+    Greatbwthree(a,b,c);
+    return 0;
+}
+
+// second approach
+#include<bits/stdc++.h>
+using namespace std;
+int main(){
+    double a,b,c;
+    cin>>a>>b>>c;
+    cout<<"the maximum of three numbers is"<<max(a,max(b,c));
+    return 0;
+}
+
+//third approach
+USE ELSE IF LADDER
