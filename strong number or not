@@ -1,0 +1,30 @@
+#include<bits/stdc++.h>
+using namespace std;
+int factorial(int n){
+    int fact=1;
+        for(int i=1;i<=n;i++)
+        {
+            fact=fact*i;
+        }
+    return fact;
+}
+int strong_no(int num){
+    int sum=0;
+    while(num>0){
+        int digits=num%10;
+        sum=sum+factorial(digits);
+        num=num/10;
+    }
+    return sum;
+}
+int main(){
+    int num=1425;
+    int answer=strong_no(num);
+    if(answer==num&& num!=0){
+        cout<<"strong_no";
+    }
+    else{
+        cout<<"not a strong number";
+    }
+    return 0;
+}
